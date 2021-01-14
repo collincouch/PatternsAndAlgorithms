@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
+    <ProjectGuid>{6AFC1C3E-9261-4B80-9D0F-2187FF422DEF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>IK</RootNamespace>
+    <AssemblyName>IK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|anycpu' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Graph.cs" />
+    <Compile Include="Utils\QuickSort.cs" />
+    <Compile Include="Utils\TreeNode.cs" />
+    <Compile Include="Utils\Heap.cs" />
+    <Compile Include="Utils\CharGraph.cs" />
+    <Compile Include="Trees\DepthFirst\BinaryTreePreorderTraversal.cs" />
+    <Compile Include="Trees\DepthFirst\ConvertSortedArrayToBinarySearchTree.cs" />
+    <Compile Include="Trees\DepthFirst\ConvertBinarySerarchTreeToDoubleLInkedList.cs" />
+    <Compile Include="Trees\DepthFirst\PathSum.cs" />
+    <Compile Include="Trees\DepthFirst\DiameterOfBinaryTree.cs" />
+    <Compile Include="Trees\DepthFirst\CountUnivalueSubstrees.cs" />
+    <Compile Include="Trees\DepthFirst\ConstructBinaryTreeFromPreorderAndInOrderTrav.cs" />
+    <Compile Include="Trees\DepthFirst\PathSumTwo.cs" />
+    <Compile Include="Trees\IKPracticeProblems\PrintAllPathsOfATree.cs" />
+    <Compile Include="Trees\IKPracticeProblems\IsBST.cs" />
+    <Compile Include="Trees\IKPracticeProblems\PostOrderTraversalWithoutRecursion.cs" />
+    <Compile Include="Trees\IKTests\BalanceBSTFromASortedArray.cs" />
+    <Compile Include="Trees\IKTests\HeightOfK-AryTree.cs" />
+    <Compile Include="Trees\IKTests\KSmallestElementOfBST.cs" />
+    <Compile Include="Trees\LevelTraversal\BinaryTreeLevelOrderTravBottomUp.cs" />
+    <Compile Include="Trees\LevelTraversal\NAryTreeLevelOrderTraversal.cs" />
+    <Compile Include="Trees\LevelTraversal\BinaryTreeZigzagLevelOrderTraversal.cs" />
+    <Compile Include="Trees\LevelTraversal\BinaryTreeRightSide.cs" />
+    <Compile Include="Trees\LevelTraversal\BinaryTreeLevelOrderTraversal.cs" />
+    <Compile Include="SystemsDesign\EncodeDecodeTinyUrl.cs" />
+    <Compile Include="Sorting\IKPracticeProblems\ThreeSum.cs" />
+    <Compile Include="Sorting\IKPracticeProblems\FourBillion.cs" />
+    <Compile Include="Sorting\IKPracticeProblems\MergeKSortedArrays.cs" />
+    <Compile Include="Sorting\IKPracticeProblems\SortAllCharacters.cs" />
+    <Compile Include="Sorting\IKPracticeProblems\GroupingTheNumbers.cs" />
+    <Compile Include="Sorting\IKPracticeProblems\TopK.cs" />
+    <Compile Include="Sorting\IKPracticeProblems\LexicographicalSort.cs" />
+    <Compile Include="Sorting\IKPracticeProblems\NearestNeighbor.cs" />
+    <Compile Include="Sorting\IKPracticeProblems\ImpementMergeSort.cs" />
+    <Compile Include="Sorting\IKTests\DutchFlag.cs" />
+    <Compile Include="Sorting\IKTests\MergeTwoArrays.cs" />
+    <Compile Include="Recursion\LectureProblems\Recursion.cs" />
+    <Compile Include="Recursion\IKPracticeProblems\PalindromicDecomposition.cs" />
+    <Compile Include="Recursion\IKPracticeProblems\TowerOfHanoi.cs" />
+    <Compile Include="Recursion\IKPracticeProblems\SubsetOfASet.cs" />
+    <Compile Include="Recursion\IKPracticeProblems\NQueenProblem.cs" />
+    <Compile Include="Recursion\IKTests\PossibleToAcheiveSum.cs" />
+    <Compile Include="Recursion\IKTests\WellFormedBrackets.cs" />
+    <Compile Include="Graphs\LectureProblems\IsGraphBipartite.cs" />
+    <Compile Include="Graphs\LectureProblems\SnakesAndLadders.cs" />
+    <Compile Include="Graphs\LectureProblems\CourseScheduleII.cs" />
+    <Compile Include="Graphs\LectureProblems\NumberOfConnectedComponentsInAnUndirectedGraph.cs" />
+    <Compile Include="Graphs\LectureProblems\GraphValidTree.cs" />
+    <Compile Include="Graphs\IKPracticeProblems\StringTransformationGivenDictonaryOfWords.cs" />
+    <Compile Include="Graphs\IKPracticeProblems\ShortestPathIn2DWithKeysAndDoors.cs" />
+    <Compile Include="Graphs\IKPracticeProblems\KnightTourOnAChessBoard.cs" />
+    <Compile Include="Graphs\IKTests\OrderOfCharactersInAlienDictionary.cs" />
+    <Compile Include="DynamicPrograming\LectureProblems\AmericanFootballScores.cs" />
+    <Compile Include="DesignPatterns\StatePattern.cs" />
+    <Compile Include="DesignPatterns\CompositePattern.cs" />
+    <Compile Include="DesignPatterns\FlyweightPattern.cs" />
+    <Compile Include="DesignPatterns\FactoryMethodPattern.cs" />
+    <Compile Include="DesignPatterns\CommandPattern.cs" />
+    <Compile Include="DesignPatterns\ProxyPattern.cs" />
+    <Compile Include="DesignPatterns\StrategyPattern.cs" />
+    <Compile Include="DesignPatterns\VisitorPattern.cs" />
+    <Compile Include="DesignPatterns\SingletonPattern.cs" />
+    <Compile Include="DesignPatterns\ObserverPattern.cs" />
+    <Compile Include="DesignPatterns\DecoratorPattern.cs" />
+    <Compile Include="DesignPatterns\IKPracticeProblems\TicTacToe\TicTacToe.cs" />
+    <Compile Include="DesignPatterns\IKPracticeProblems\FileSystem\FileSystem.cs" />
+    <Compile Include="Sorting\Leet\TwoSum.cs" />
+    <Compile Include="Sorting\Leet\IntersectionOfArrays.cs" />
+    <Compile Include="Sorting\Leet\KthLargestElementInAnArray.cs" />
+    <Compile Include="Sorting\Leet\ThreeSum.cs" />
+    <Compile Include="Amazon\LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="Sorting\Leet\KClosestPointsToOrgin.cs" />
+    <Compile Include="Sorting\Leet\KthLargestElementInAStream.cs" />
+    <Compile Include="Sorting\Leet\MedianFromDataStream.cs" />
+    <Compile Include="Sorting\Leet\TopKFrequentElements.cs" />
+    <Compile Include="Recursion\Leet\LetterCasePermutation.cs" />
+    <Compile Include="Sorting\IKTests\DutchFlagTwo.cs" />
+    <Compile Include="Sorting\IKTests\MergeTwoArraysTwo.cs" />
+    <Compile Include="Recursion\Leet\Subsets.cs" />
+    <Compile Include="Amazon\Sorting\KLargestElementInAnArray.cs" />
+    <Compile Include="Amazon\Recursion\LetterCombinationsOfAPhoneNumber.cs" />
+    <Compile Include="Recursion\Leet\Permutations.cs" />
+    <Compile Include="Recursion\Leet\PermutationsII.cs" />
+    <Compile Include="Recursion\Leet\SubsetsII.cs" />
+    <Compile Include="Recursion\Leet\GenerateParentheses.cs" />
+    <Compile Include="Recursion\Leet\Combinations.cs" />
+    <Compile Include="Recursion\Leet\CombinationsSumII.cs" />
+    <Compile Include="Recursion\Leet\NQueens.cs" />
+    <Compile Include="Repay\MaxValWithFive.cs" />
+    <Compile Include="LeetCodeChallenges\Dec\Week3.cs" />
+    <Compile Include="Amazon\Sorting\TopKFrequentElements.cs" />
+    <Compile Include="Amazon\Sorting\MedianOfTwoSortedArrays.cs" />
+    <Compile Include="Trees\Leet\BinaryTreeLevelOrderTraversal.cs" />
+    <Compile Include="Trees\Leet\NAryTreeLevelOrderTraversal.cs" />
+    <Compile Include="Trees\Leet\BinaryTreeLevelOrderTraversal2.cs" />
+    <Compile Include="Trees\Leet\BinaryTreeRightSideView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DesignPatterns\IKPracticeProblems\TicTacToe\TicTacToeClassDiagram.png" />
+    <None Include="DesignPatterns\IKPracticeProblems\TicTacToe\Restful TicTacToe System API.gdoc" />
+    <None Include="DesignPatterns\IKPracticeProblems\FileSystem\FileSystem.png" />
+    <None Include="DesignPatterns\IKPracticeProblems\FileSystem\Restful File System API.gdoc" />
+    <None Include="test.js" />
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sorting\Leet\" />
+    <Folder Include="Amazon\" />
+    <Folder Include="Recursion\Leet\" />
+    <Folder Include="Amazon\Sorting\" />
+    <Folder Include="Amazon\Recursion\" />
+    <Folder Include="Repay\" />
+    <Folder Include="LeetCodeChallenges\" />
+    <Folder Include="LeetCodeChallenges\Dec\" />
+    <Folder Include="Trees\Leet\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IK", "IK.csproj", "{6AFC1C3E-9261-4B80-9D0F-2187FF422DEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AFC1C3E-9261-4B80-9D0F-2187FF422DEF}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{6AFC1C3E-9261-4B80-9D0F-2187FF422DEF}.Debug|anycpu.Build.0 = Debug|anycpu
+		{6AFC1C3E-9261-4B80-9D0F-2187FF422DEF}.Release|anycpu.ActiveCfg = Release|anycpu
+		{6AFC1C3E-9261-4B80-9D0F-2187FF422DEF}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9399E6E-C250-4442-999A-964B96F682DF}
+	EndGlobalSection
+EndGlobal
