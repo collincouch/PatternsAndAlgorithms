@@ -128,6 +128,9 @@
     <Compile Include="Trees\Leet\NAryTreeLevelOrderTraversal.cs" />
     <Compile Include="Trees\Leet\BinaryTreeLevelOrderTraversal2.cs" />
     <Compile Include="Trees\Leet\BinaryTreeRightSideView.cs" />
+    <Compile Include="Trees\Leet\BinaryTreeZigZagLevelOrderTraversal.cs" />
+    <Compile Include="Trees\Leet\PathSum.cs" />
+    <Compile Include="Trees\Leet\PathSumII.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DesignPatterns\IKPracticeProblems\TicTacToe\TicTacToeClassDiagram.png" />

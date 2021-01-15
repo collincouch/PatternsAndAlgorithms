@@ -99,28 +99,53 @@ namespace IK
             //var result = nt.LevelOrder(root);
 
 
-            BinaryTreeRightSideView bsv = new BinaryTreeRightSideView();
+            //BinaryTreeRightSideView bsv = new BinaryTreeRightSideView();
             Trees.Leet.TreeNode node = new Trees.Leet.TreeNode();
 
-            node.val = 1;
+            node.val = 0;
             node.left = new Trees.Leet.TreeNode()
             {
                 val = 2,
-                right = new Trees.Leet.TreeNode()
+                left = new Trees.Leet.TreeNode()
                 {
-                    val = 5
+                    val = 1,
+                    left = new Trees.Leet.TreeNode()
+                    {
+                        val = 5
+                    },
+                    right = new Trees.Leet.TreeNode()
+                    {
+                        val = 1
+                    }
                 }
             };
             node.right = new Trees.Leet.TreeNode()
             {
-                val = 3,
+                val = 4,
+                left = new Trees.Leet.TreeNode()
+                {
+                    val=3,
+                    right = new Trees.Leet.TreeNode()
+                    {
+                        val = 6
+                    }
+                },
                 right = new Trees.Leet.TreeNode()
                 {
-                    val=4
+                    val = -1,
+                    right = new Trees.Leet.TreeNode()
+                    {
+                        val = 8
+                    }
                 }
             };
 
-            bsv.RightSideView(node);
+            //bsv.RightSideView(node);
+
+
+            BinaryTreeZigZagLevelOrderTraversal btzz = new BinaryTreeZigZagLevelOrderTraversal();
+
+            btzz.ZigzagLevelOrder(node);
                      Console.Write("test");
 
                      //var result = w3.SortedSquares(new int[] { -7, -3, 2, 3, 11 });

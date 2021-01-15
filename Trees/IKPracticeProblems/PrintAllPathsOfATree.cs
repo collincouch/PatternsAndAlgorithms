@@ -8,38 +8,43 @@ namespace IK.Trees.IKPracticeProblems
     {
 
 
+        static List<List<int>> result = new List<List<int>>();
 
-        public static void binaryRecursion(TreeNode node, List<List<int>> result, List<int> pathToLeaf)
+        static List<List<int>> allPathsOfABinaryTree(TreeNode root)
         {
 
+            if (root == null)
+                return result;
 
+
+            dfsHelper(root, new List<int>());
+
+            return result;
+        }
+
+        private static void dfsHelper(TreeNode node,List<int> slate)
+        {
             //base case
             if (node.left_ptr == null && node.right_ptr == null)
             {
-                //we are at leaf
-                pathToLeaf.Add(node.val);
-                result.Add(pathToLeaf);
-                pathToLeaf.RemoveAt(pathToLeaf.Count - 1);
-                return;
+                slate.Add(node.val);
+                result.Add(new List<int>(slate));
+                slate.RemoveAt(slate.Count - 1);
+
             }
 
-            pathToLeaf.Add(node.val);
 
-            //go left
+            //recursive case
+            slate.Add(node.val);
             if (node.left_ptr != null)
-                binaryRecursion(node.left_ptr, result, pathToLeaf);
+                dfsHelper(node.left_ptr, slate);
 
-            //go right
             if (node.right_ptr != null)
-                binaryRecursion(node.right_ptr, result, pathToLeaf);
+                dfsHelper(node.right_ptr, slate);
 
+            slate.RemoveAt(slate.Count - 1);
 
-
-            pathToLeaf.Remove(pathToLeaf.Count - 1);
-
-
-
-
+                
 
         }
     }
