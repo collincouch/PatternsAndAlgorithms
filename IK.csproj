@@ -131,6 +131,11 @@
     <Compile Include="Trees\Leet\BinaryTreeZigZagLevelOrderTraversal.cs" />
     <Compile Include="Trees\Leet\PathSum.cs" />
     <Compile Include="Trees\Leet\PathSumII.cs" />
+    <Compile Include="Trees\IKPracticeProblems\ConvertBinaryTreeToCircularDoubleLinkedList.cs" />
+    <Compile Include="Trees\Leet\CountUnivalSubtrees.cs" />
+    <Compile Include="Trees\Leet\ConstructBinarySearchTreeFromPreorderTraversal.cs" />
+    <Compile Include="Trees\Leet\ConvertSortedArrayToBinarySearchTree.cs" />
+    <Compile Include="Trees\Leet\ConstructBinaryTreeFromInOrderAndPreOrderTraversal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DesignPatterns\IKPracticeProblems\TicTacToe\TicTacToeClassDiagram.png" />
