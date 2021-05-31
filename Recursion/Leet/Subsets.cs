@@ -3,6 +3,13 @@ using System.Collections.Generic;
 
 namespace IK.Recursion.Leet
 {
+
+    //Space: Input O(n) + Aux Space O(n) + Output O(n2^n * n/2)
+    //=O(2^n*n)
+
+    //Time: Leaf workers O(2^n*n) + Internal workers O(2n)
+    //=O(2^n*n)
+
     //78
     public class Subsets
     {

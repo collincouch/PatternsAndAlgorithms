@@ -136,6 +136,17 @@
     <Compile Include="Trees\Leet\ConstructBinarySearchTreeFromPreorderTraversal.cs" />
     <Compile Include="Trees\Leet\ConvertSortedArrayToBinarySearchTree.cs" />
     <Compile Include="Trees\Leet\ConstructBinaryTreeFromInOrderAndPreOrderTraversal.cs" />
+    <Compile Include="Graphs\Leet\NumberOfConnectedComponentsInAUndirectedGraph.cs" />
+    <Compile Include="Graphs\Leet\GraphValidTree.cs" />
+    <Compile Include="Sorting\Leet\TwoSumII.cs" />
+    <Compile Include="Sorting\Leet\MeetingRoomsII.cs" />
+    <Compile Include="Sorting\Leet\IntersectionOfThreeSortedArrays.cs" />
+    <Compile Include="Sorting\Leet\MeetingRooms.cs" />
+    <Compile Include="Sorting\Leet\MergeSortedArrays.cs" />
+    <Compile Include="Recursion\Leet\LetterCombinationsOfAPhoneNumber.cs" />
+    <Compile Include="Trees\Leet\DiameterOfABinaryTree.cs" />
+    <Compile Include="Graphs\Leet\IsGraphBipartite.cs" />
+    <Compile Include="DynamicPrograming\Leet\UniquePathsII.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DesignPatterns\IKPracticeProblems\TicTacToe\TicTacToeClassDiagram.png" />
@@ -155,6 +166,8 @@
     <Folder Include="LeetCodeChallenges\" />
     <Folder Include="LeetCodeChallenges\Dec\" />
     <Folder Include="Trees\Leet\" />
+    <Folder Include="Graphs\Leet\" />
+    <Folder Include="DynamicPrograming\Leet\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

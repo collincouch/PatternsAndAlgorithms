@@ -4,6 +4,13 @@ using System.Text;
 
 namespace IK.Recursion.Leet
 {
+    //Space: Input O(n) + Aux Space O(n) + Output O(2^n*n)
+    //O(2^n*n)
+
+    //Time: Leaf workers O(2^n*n) + Internal workers O(2n)
+    //=O(2^n*n)
+
+
     //#784
     public class LetterCasePermutation
     {

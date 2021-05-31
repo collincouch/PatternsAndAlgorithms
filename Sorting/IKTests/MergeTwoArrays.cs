@@ -14,40 +14,36 @@ namespace IK.Sorting.IKPracticeProblems.IKTests
 			 * Write your code here.
 			 */
 
-            int i = arr1.Length-1;
+            int i = arr1.Length - 1;
             int j = i;
-            int k = arr2.Length-1;
+            int k = arr2.Length - 1;
 
-            while (i > 0)
+            while (i >= 0)
             {
-                if(j>0)
+                if (j >= 0)
                 {
                     if (arr2[j] > arr1[i])
                     {
-                        SwapInts(arr2, j, k);
+                        arr2[k] = arr2[j];
                         j--;
-                       
                     }
                     else
                     {
-                        SwapInts(arr2, i, k);
+                        arr2[k] = arr1[i];
                         i--;
-                      
                     }
                     k--;
                 }
                 else
                 {
-                    SwapInts(arr2, i, k);
+                    arr2[k] = arr1[i];
                     i--;
                     k--;
                 }
-              
-
             }
 
-            
-       
+
+
 
         }
 

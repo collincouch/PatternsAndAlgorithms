@@ -5,7 +5,8 @@ namespace IK.Trees.Leet
 {
     //#102
 
-   
+    //T(n) = O(n)
+    //S(n) = O(n)
     public class TreeNode
     {
       public int val;

@@ -3,6 +3,13 @@ using System.Collections.Generic;
 
 namespace IK.Recursion.Leet
 {
+    //Space: Input O(n) + Aux Space O(n) + Output O(n!*n)
+    //=O(n!*n)
+
+    //Time: Leaf workers O(n!*n) + Internal workers - doesn't matter since leaf
+    //workers do the most
+    //=O(n!*n)
+
     //46
     public class Permutations
     {
